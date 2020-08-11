@@ -1,0 +1,19 @@
+export class Empleado{
+    id_empleado:number;
+	nombre:string;
+	apaterno:string;
+	amaterno:string;
+	fecha_nacimiento:string;
+    edad:number;
+    estatura:number;
+    peso:number;
+	alergia:string;
+	rfc:string;
+	curp:string;
+	nss:string;
+    correo:string;
+    id_sexo:number;
+    id_nacionalidad:number;
+    id_estado_civil:number;
+    id_tipo_sangre:number;
+}
