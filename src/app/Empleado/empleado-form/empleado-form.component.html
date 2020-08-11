@@ -1,211 +1,222 @@
 
-	<!-- Body Formulario  -->
+<!-- Body Formulario  -->
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-8 offset-md-2">
-				<br />
-				<!--  -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-8 offset-md-2">
+			<br />
+			<!--  -->
 
-				<!-- Inicia el formulario de registro -->
-				<div class="card ">
+			<!-- Inicia el formulario de registro -->
+			<div class="card ">
 
 
-					<h5
-						class="card-header info-color white-text text-center py-4 text-white bg-dark mb-3">
-						<strong>Registro de usuario</strong>
-					</h5>
+				<h5
+					class="card-header info-color white-text text-center py-4 text-white bg-dark mb-3">
+					<strong>Registro de usuario</strong>
+				</h5>
 
-					<!--Card para el formulario-->
-					<div class="card-body px-lg-5 pt-0">
+				<!--Card para el formulario-->
+				<div class="card-body px-lg-5 pt-0">
 
-						<!-- Construccion del formulario -->
-						<form class="text-center" action="" method="">
+					<!-- Construccion del formulario -->
+					<form class="text-center" action="" method="">
 
-							<div class="form-row">
+						<div class="form-row">
 
-								<div class="col">
-									<!-- Nombre -->
-									<div class="md-form">
-										<label for="txtNombre">Nombre:</label> <input type="text"
-											id="txtNombre" name="nombre"
-											class="form-control">
-									</div>
-								</div>
-								<div class="col">
-									<!-- Apellido paterno -->
-									<div class="md-form">
-										<label for="txtAPaterno">Apellido paterno</label> <input
-											type="text"  id="txtAPaterno"
-											name="apaterno" class="form-control">
-									</div>
+							<div class="col">
+								<!-- Nombre -->
+								<div class="md-form">
+									<label for="txtNombre">Nombre:</label> <input type="text"
+										id="txtNombre" name="nombre"
+										class="form-control">
 								</div>
 							</div>
-
-							<div class="form-row">
-								<div class="col">
-									<!-- Apellido materno -->
-									<div class="md-form">
-										<label for="txtAMaterno">Apellido Materno</label> <input
-											type="text" id="txtAMaterno"
-											name="amaterno" class="form-control">
-									</div>
-								</div>
-								<div class="col">
-									<!-- Fecha nacimiento --->
-									<div class="md-form">
-										<label for="txtFechaNac">Fecha de Nacimiento</label> <input
-											type="date"
-											name="fechaNacimiento" id="txtFechaNac" class="form-control">
-									</div>
+							<div class="col">
+								<!-- Apellido paterno -->
+								<div class="md-form">
+									<label for="txtAPaterno">Apellido paterno</label> <input
+										type="text"  id="txtAPaterno"
+										name="apaterno" class="form-control">
 								</div>
 							</div>
+						</div>
 
-							<div class="form-row">
-								<div class="col">
-									<!-- Edad -->
-									<div class="md-form">
-										<label for="txtEdad">Edad</label> <input type="number"
-											name="edad" id="txtEdad"
-											class="form-control">
-									</div>
+						<div class="form-row">
+							<div class="col">
+								<!-- Apellido materno -->
+								<div class="md-form">
+									<label for="txtAMaterno">Apellido Materno</label> <input
+										type="text" id="txtAMaterno"
+										name="amaterno" class="form-control">
 								</div>
-								<div class="col">
-									<!-- Sexo -->
-									<div class="md-form">
-										<label for="sltSexo">Sexo</label> <select
-											name="sexo" id="sltSexo"
-											class="form-control">
-											<option value="hombre">Hombre</option>
-											<option value="mujer">Mujer</option>
+							</div>
+							<div class="col">
+								<!-- Fecha nacimiento --->
+								<div class="md-form">
+									<label for="txtFechaNac">Fecha de Nacimiento</label> <input
+										type="date"
+										name="fechaNacimiento" id="txtFechaNac" class="form-control">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="col">
+								<!-- Edad -->
+								<div class="md-form">
+									<label for="txtEdad">Edad</label> <input type="number"
+										name="edad" id="txtEdad"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col">
+								<!-- Sexo -->
+								<div class="md-form">
+									<label for="sltSexo">Sexo</label> <select
+										name="sexo" id="sltSexo"
+										class="form-control">
+										<option *ngFor="let sexo of sexos"
+										 value="{{sexo.id_sexo}}">{{sexo.str_sexo}}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form-row">
+							<div class="col">
+								<!-- Estatura -->
+								<div class="md-form">
+									<label for="txtEstatura">Estatura</label> <input type="number"
+										name="estatura"
+										id="txtEstatura" class="form-control">
+								</div>
+							</div>
+							<div class="col">
+								<!-- peso -->
+								<div class="md-form">
+									<label for="txtPeso">Peso</label> <input type="number"
+										id="txtPeso" name="peso"
+										class="form-control">
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form-row">
+							<div class="col">
+								<!-- Alergia -->
+								<div class="md-form">
+									<label for="txtAlergia">Alergia</label> <input type="text"
+										name="alergia" id="txtAlergia"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col">
+								<!-- RFC -->
+								<div class="md-form">
+									<label for="txtRfc">RFC</label> <input type="text" name="rfc"
+										id="txtRfc" class="form-control">
+								</div>
+							</div>
+							
+						</div>
+
+						<div class="form-row">
+							<div class="col">
+								<!-- Curp -->
+								<div class="md-form">
+									<label for="txtCurp">Curp</label> <input type="text"
+										name="curp" id="txtCurp"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col">
+								<!-- Nss -->
+								<div class="md-form">
+									<label for="txtNss">NSS</label> <input type="text" name="nss"
+											id="txtNss" class="form-control">
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form-row">
+							<div class="col">
+								<!-- correo -->
+								<div class="md-form">
+									<label for="txtCorreo">Correo</label> <input type="email"
+										name="correo" id="txtCorreo"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col">
+								<!-- estado civil -->
+								<div class="md-form">
+									<label for="sltEstadoCivil">Estado civil</label> 
+									<div>
+										<select id="sltEstadoCivil" class="form-control">
+											<option *ngFor="let estadociv of estadosciv"
+											value="{{estadociv.id_estado_civil}">{{estadociv.str_estado_civil}}</option>
 										</select>
 									</div>
 								</div>
 							</div>
+						</div>
 
 
-							<div class="form-row">
-								<div class="col">
-									<!-- Estatura -->
-									<div class="md-form">
-										<label for="txtEstatura">Estatura</label> <input type="number"
-										    name="estatura"
-											id="txtEstatura" class="form-control">
-									</div>
-								</div>
-								<div class="col">
-									<!-- peso -->
-									<div class="md-form">
-										<label for="txtPeso">Peso</label> <input type="number"
-											id="txtPeso" name="peso"
-											class="form-control">
+						<div class="form-row">
+							<div class="col">
+								<!-- tipo sangre -->
+								<div class="md-form">
+									<label for="sltTipoSangre">Tipo de sangre</label> 
+									<div>
+										<select id="sltTipoSangre" class="form-control">
+											<option *ngFor="let tsangre of ltsangre"
+											value="{{tsangre.id_tipo_sangre}}">{{tsangre.str_tipo_sangre}}</option>
+										</select>
 									</div>
 								</div>
 							</div>
-
-
-							<div class="form-row">
-								<div class="col">
-									<!-- Alergia -->
-									<div class="md-form">
-										<label for="txtAlergia">Alergia</label> <input type="text"
-											name="alergia" id="txtAlergia"
-											class="form-control">
-									</div>
-								</div>
-								<div class="col">
-									<!-- RFC -->
-									<div class="md-form">
-										<label for="txtRfc">RFC</label> <input type="text" name="rfc"
-											id="txtRfc" class="form-control">
-									</div>
-								</div>
-								
-							</div>
-
-							<div class="form-row">
-								<div class="col">
-									<!-- Curp -->
-									<div class="md-form">
-										<label for="txtCurp">Curp</label> <input type="text"
-											name="curp" id="txtCurp"
-											class="form-control">
-									</div>
-								</div>
-								<div class="col">
-									<!-- Nss -->
-									<div class="md-form">
-										<label for="txtNss">NSS</label> <input type="text" name="nss"
-											 id="txtNss" class="form-control">
+							<div class="col">
+								<!-- Nacionalidad -->
+								<div class="md-form">
+									<label for="sltNacionalidad">Nacionalidad</label> 
+									<div>
+										<select id="sltNacionalidad" class="form-control">
+											<option *ngFor="let inacionalidad of nacionalidades"
+											value="{{inacionalidad.id_nacionalidad}}">{{inacionalidad.str_nacionalidad}}</option>
+										</select>
 									</div>
 								</div>
 							</div>
+						</div>
+						
+						
 
+						<!-- Boton de registro -->
+						<button
+							class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0"
+							type="submit">Registrar empleado</button>
 
-							<div class="form-row">
-								<div class="col">
-									<!-- estado civil -->
-									<div class="md-form">
-										<label for="txtEstadoCivil">Estado civil</label> <input
-											type="text" 
-											name="estadoCivil" id="txtEstadoCivil" class="form-control">
-									</div>
-								</div>
-								<div class="col">
-									<!-- correo -->
-									<div class="md-form">
-										<label for="txtCorreo">Correo</label> <input type="email"
-											name="correo" id="txtCorreo"
-											class="form-control">
-									</div>
-								</div>
-							</div>
+						<hr>
 
-
-							<div class="form-row">
-								<div class="col">
-									<!-- tipo sangre -->
-									<div class="md-form">
-										<label for="txtTipoSangre">Tipo de sangre</label> <input
-											type="text" 
-											name="tipoSangre" id="txtTipoSangre" class="form-control">
-									</div>
-								</div>
-								<div class="col">
-									<!-- Nacionalidad -->
-									<div class="md-form">
-										<label for="txtNacionalidad">Nacionalidad</label> <input
-											type="text" name="nacionalidad"
-											id="txtNacionalidad"
-											class="form-control">
-									</div>
-								</div>
-							</div>
-							
-							
-
-							<!-- Boton de registro -->
-							<button
-								class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0"
-								type="submit">Registrar empleado</button>
-
-							<hr>
-
-							<p>Vista de registro de usuario
-						</form>
-						<!-- Finalizacion del formulario -->
-
-					</div>
+						<p>Vista de registro de usuario
+					</form>
+					<!-- Finalizacion del formulario -->
 
 				</div>
 
-				<br>
-
-				<!--  -->
-
 			</div>
+
+			<br>
+
+			<!--  -->
+
 		</div>
 	</div>
+</div>
 
-	<!-- Fin del formulario -->
+<!-- Fin del formulario -->
 

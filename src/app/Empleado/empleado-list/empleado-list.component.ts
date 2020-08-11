@@ -15,7 +15,7 @@ export class EmpleadoListComponent implements OnInit {
   constructor(private service:ServiceEmpleadoService, private router:Router) { }
 
   ngOnInit(): void {
-    this.service.getPersonas().subscribe(data=>{
+    this.service.getEmpleados().subscribe(data=>{
       this.empleados=data;
     });
   }
